@@ -1,0 +1,90 @@
+@import "../../global.scss";
+
+.contact {
+    background-color: whitesmoke;
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .left{
+        flex:1;
+        overflow: hidden;
+        flex-direction: column;
+
+        .Container{
+            width: 700px;
+            height: 650px;
+            border-radius: 30%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+                    
+            img {
+                height: 100%;
+       
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        h2 {
+            font-size: 30px;
+            overflow: hidden;
+            height: 15%;
+        }
+
+
+        .contact__form__button {
+            // reset
+            outline: none;
+            border: none;
+            cursor: default;
+            transition: box-shadow 300ms ease;
+            letter-spacing: 2px;
+            box-shadow: 0px 0px $btnHeight/2 20px $shadow;
+            user-select: none;
+  
+            position: relative;
+            box-sizing: border-box;
+            width: $btnWidth;
+            height: $btnHeight;
+            border-radius: $borderRadius;
+            border: $btnBorder solid;
+            border-color: $accentColor;
+            background: none;
+            color: $accentColor;
+            transition: all 300ms ease-out;
+            
+            &:hover {
+                cursor: pointer;
+                font-size: 1.05em;
+                border-color: transparent;
+                background: $accentColor;
+                color: $bgColor;
+            }
+
+            .loader-message {
+                font-size: 0.9em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            } 
+            
+
+        }
+
+
+
+    }
+}

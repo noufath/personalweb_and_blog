@@ -1,0 +1,33 @@
+# Byte-compiled
+.vscode/
+backend/danynotes/blog/__pycache__/*
+
+
+
+# Distribution / packaging
+.Python
+build/
+lib/
+lib64/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheel*.egg
+MANIFEST
+
+
+# Environment
+.env
+frontend/.env
+backend/danynotes/danynotes/.env 
+
+
+#Media
+/backend/danynotes/media/*
+
+
+
+# production
+/build
+backend/build/
+frontend/build/
