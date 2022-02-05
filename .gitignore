@@ -109,6 +109,16 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+backend/danynotes/danynotes/.env 
+
+
+#Media
+/backend/danynotes/media/*
+
+ # production
+/build
+backend/build/
+frontend/build/
 
 # Spyder project settings
 .spyderproject
