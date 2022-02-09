@@ -37,7 +37,7 @@ const Layout = (props) => {
             <div className={"topbar " + (menuOpen && "active") } id="topbar">
                 <div className="wrapper">
                     <div className="left">
-                        <Link to="/" className="logo" onClick={() => { setMenuOpen(false); setLinkClicked(false); setHideSection(false); setHideBlog(true) }}>genius.</Link>
+                        <Link to="/" className="logo" onClick={() => { setMenuOpen(false); setLinkClicked(false); setHideSection(false); setHideBlog(true) }}>DNotes</Link>
                     </div>
                     
                     <div className="right">

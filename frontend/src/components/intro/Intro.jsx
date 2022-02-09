@@ -2,7 +2,8 @@ import "./intro.scss";
 import axios from "axios";
 import { init } from 'ityped';
 import React, { useState, useEffect, useRef } from "react";
-
+import introimage from "../assets/dany_intro_img.png"
+import downarrow from "../assets/down.png"
 
 
 export default function Intro() {
@@ -51,7 +52,7 @@ export default function Intro() {
         <div className="intro" id="home">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/man.png" alt="" />
+                    <img src={introimage} alt="" /> 
                 </div>
             </div>
 
@@ -66,7 +67,7 @@ export default function Intro() {
                 </div>
 
                 <a href="#portfolio">
-                    <img src="assets/down.png" alt="" />
+                    <img src={downarrow} alt="" />
                 </a>
             </div>
         </div>

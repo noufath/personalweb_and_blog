@@ -17,7 +17,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             title: "Portfolio",
             
         },
-        {
+        /*{
             id: 3,
             hastag: "works",
             title: "Works",
@@ -29,6 +29,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             title: "Testimonials",
             
         },
+        */
         {
             id: 6,
             hastag: "contact",

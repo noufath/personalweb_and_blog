@@ -6,6 +6,7 @@ import { FormGroup } from '@mui/material';
 import { Input } from '@mui/material';
 import TextField from '@mui/material/TextField'
 import toast, { Toaster } from 'react-hot-toast';
+import mailcontact_img from '../assets/mailcontact.png'
 
 
 export default function Contact () {
@@ -92,7 +93,7 @@ export default function Contact () {
             <div className="left">
                 
                 <div className="Container">
-                    <img src="assets/mailcontact.png" alt="" />
+                    <img src={mailcontact_img} alt="" />
                 </div>
   
             </div>

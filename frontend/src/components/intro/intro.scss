@@ -16,9 +16,9 @@
         overflow-y: hidden;
 
         .imgContainer{
-            width: 700px;
-            height: 700px;
-            background-color: crimson;
+            width: 670px;
+            height: 670px;
+            background-color: whitesmoke;
             border-radius: 50%;
             display: flex;
             align-items: flex-end;
@@ -31,6 +31,8 @@
 
             img{
                 height: 90%;
+                margin-bottom: 0%;
+                filter: contrast(110%);
 
                 @include mobile{
                     height: 50%;
@@ -39,6 +41,7 @@
 
         }
 
+      
     }
     .right{
         flex: 0.5;
