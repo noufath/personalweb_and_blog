@@ -1,2 +1,23 @@
-# personalweb_and_blog
+# Personal portfolio and web blog
 Personal Web and Blog using Django as backend, Django Rest Framework and React.JS as frontend
+
+
+## Environment file
+Create an environment file in backend with the following parameters :
+
+SECRET_KEY=YOUR_SECRET_KEY
+DJANGO_DEBUG=DJANGO_DEBUG_OPTION
+DATABASE_USER=YOUR_POSTGRES_USER
+DATABASE_PASS=YOUR_POSTGRESQL_PASSWORD
+DATABASE_NAME=YOUR_POSTGRESQL_DBNAME
+DATABASE_PORT=YOUR_POSTGRESQL_PORT
+DATABASE_HOST=YOUR_POSTGRESQL_HOST
+ALLOWED_HOSTS=localhost,127.0.0.1
+E_HOST=smtp.gmail.com
+E_PORT=587
+E_HOSTUSER=YOUR_EMAIL_SENDER_ACCOUNT
+E_HOSTPASSWORD=YOUR_EMAIL_SENDER_KEYAPP/ PASSWORD
+E_USETLS=True
+
+### Home Page
+![home page]()
