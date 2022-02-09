@@ -28,8 +28,8 @@ E_USETLS=True
 ![menubar](https://user-images.githubusercontent.com/7325133/153145211-499205e0-f1e0-4d76-b221-947a052077c2.png)
 
 ## Portfolio page
-Portfolio list fetch from backend
-![portfolio_desktop](https://user-images.githubusercontent.com/7325133/153179728-3a975eb9-7704-4bbc-97bc-a7ffd03d3606.png)
+Portfolio list fetch from Django Rest Framework
+![portfolio](https://user-images.githubusercontent.com/7325133/153180211-dcbf76a9-0518-466a-a5ef-6ab2813b54e1.png)
 
 ## Contact Form Page
 Every message that has been sent, backend server will send the message to the admin email.
