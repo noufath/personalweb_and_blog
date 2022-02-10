@@ -2,6 +2,29 @@
 Personal Web and Blog using Django as backend, Django Rest Framework and React.JS as frontend
 
 
+## Dependencies
+This web depends on :
+
+    Database :
+        - PostgreSQL 13.0
+
+    Backend : 
+        - Django 3.4.2
+        - django-rest-framework 0.1.0
+        - environ 1.0
+        - Pillow 8.3.1
+        - Psycopg2 2.9.1
+        - Psycopg2-bin 2.9.1
+    
+    Frontend :
+        - react ^17.0.2
+        - @material-ui/core ^4.11.3
+        - @material-ui/icons ^4.11.2
+        - @mui/material ^5.0.2
+        - @mui/icons-material ^5.0.3
+        - axios ^0.22.0
+        - typed.js ^2.0.11
+
 ## Environment file
 Create an environment file in backend with the following parameters :
 
