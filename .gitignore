@@ -60,6 +60,9 @@ coverage.xml
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+*.pot
+*.pyc
+__pycache__/
 
 # Flask stuff:
 instance/
@@ -115,7 +118,7 @@ backend/danynotes/danynotes/.env
 #Media
 /backend/danynotes/media/*
 
- # production
+# production
 /build
 backend/build/
 frontend/build/

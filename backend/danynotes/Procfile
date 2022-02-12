@@ -1,0 +1,1 @@
+web: gunicorn danynotes.wsgi --log-file -
