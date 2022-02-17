@@ -52,8 +52,9 @@ export default function Works() {
 
     useEffect(() => {
         const fetchData = async () => {
+            const { default: Config } = require("../../utils/config")
             try {
-                const fullrest = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/jobs/`);
+                const fullrest = await axios.get(Config.API_URL + "/api/blog/jobs/");
                 setData(fullrest.data);
             }
             catch (err) {

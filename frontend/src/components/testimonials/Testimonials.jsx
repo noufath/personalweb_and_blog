@@ -56,8 +56,9 @@ export default function Testimonials() {
 
     useEffect(() => {
       const fetchData = async () => {
+        const { default: Config } = require("../../utils/config")
         try {
-          const resp = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/testimonial/`);
+          const resp = await axios.get(Config.API_URL+"/api/blog/testimonial/");
           setTestimony(resp.data);
         }
         catch (err) {

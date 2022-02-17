@@ -1,0 +1,17 @@
+@import "../../global.scss";
+
+
+.MenuLink {
+
+  
+    color: inherits;
+    
+
+    &.clicked {
+        cursor: default;
+        pointer-events: none;        
+        text-decoration: none;
+        color: gey;
+    }
+  
+}

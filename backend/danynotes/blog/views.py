@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import generics, permissions, serializers
 from rest_framework.views import APIView
 from django.core.mail import send_mail
+from django.views.decorators.cache import never_cache
 
 
 from blog.models import BlogPost, Categories, Portofolio, Profile, Job, Portofolio_cat, Testimonial, Contact
@@ -11,8 +12,10 @@ from blog.serializers import BlogPostSerializer, JobsSerializer, PortofolioSeria
 from blog.serializers import CategoriesSerializer
 from blog.serializers import ProfileSerializer
 from blog.serializers import PortofolioCatSerializer
+
 from danynotes.settings import EMAIL_HOST_PASSWORD, EMAIL_HOST_USER, EMAIL_USE_TLS
  
+
 class BlogPostListView(generics.ListAPIView):
     permissions_classes = (permissions.AllowAny, )
     queryset = BlogPost.objects.order_by('-date_created')

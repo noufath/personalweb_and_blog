@@ -29,7 +29,7 @@ export default function Contact () {
     );
     
     const onSubmit = async (e) => {
-        
+        const { default: Config } = require("../../utils/config")        
         e.preventDefault();
 
         try {
@@ -40,8 +40,7 @@ export default function Contact () {
             };
                 
             setLoading(true);
-
-            axios.post(`${process.env.REACT_APP_API_URL}/api/blog/contact/`, {name, email, message }, config)
+            axios.post(Config.API_URL + `/api/blog/contact/`, {name, email, message }, config)
             .then(res => {
 
                 if (res.status === 200) {

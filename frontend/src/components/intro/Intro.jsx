@@ -5,18 +5,18 @@ import React, { useState, useEffect, useRef } from "react";
 import introimage from "../assets/dany_intro_img.png"
 import downarrow from "../assets/down.png"
 
-
 export default function Intro() {
 
     const [profile, setProfile] = useState([]);
     const [displayedContent, setDisplayedContent] = useState("");
-    
+  
   
     
     useEffect(() => {
+        const { default: Config } = require("../../utils/config")
         const fetchProfile = async () => {
             try {
-                const fullres = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/profile/`);
+                const fullres = await axios.get(Config.API_URL+"/api/blog/profile/");
                 setProfile(fullres.data[0].arr_worktitle);
                 
             }
@@ -24,6 +24,7 @@ export default function Intro() {
 
             }
         }
+
         fetchProfile();
     }, []);
 
@@ -61,7 +62,7 @@ export default function Intro() {
                     <h2>Hi There, I',m</h2>
                     <h1>Dany Christianto</h1>
                     <h3>
-                        Freelance <span ref={textRef}></span>
+                        <span ref={textRef}></span>
                         
                     </h3>
                 </div>

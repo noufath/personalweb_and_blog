@@ -21,8 +21,9 @@ const BlogWebComponent = (props) => {
 
     useEffect(() => {
         const fetchSection = async () => {
+            const { default: Config } = require("../utils/config")
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/list_category/`);
+                const res = await axios.get(Config.API_URL + "/api/blog/list_category/");
                 setSectionBlog(res.data)
             }
             catch (err) {

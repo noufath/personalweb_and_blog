@@ -13,8 +13,9 @@ const BlogDetail = (props) => {
         const slug = props.match.params.id;
         
         const fetchData = async () => {
+            const { default: Config } = require("../../utils/config")
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/${slug}`);
+                const res = await axios.get(Config.API_URL + `/api/blog/${slug}`);
                 setPostDetail(res.data);
             }
             catch (err) {

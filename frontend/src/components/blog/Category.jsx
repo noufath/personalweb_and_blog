@@ -24,8 +24,9 @@ const Category = (props) => {
         };
 
         const fetchData = async () => {
+            const { default: Config } = require("../../utils/config")
             try {
-                const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/blog/category`, { cat_title_id }, config);
+                const res = await axios.post(Config.API_URL + `/api/blog/category`, { cat_title_id }, config);
                 setBlogs(res.data);
 
             }

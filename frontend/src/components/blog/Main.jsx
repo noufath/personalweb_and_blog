@@ -16,8 +16,9 @@ export default function Main(props) {
 
     useEffect(() => {
         const fetchData = async () => {
+            const { default: Config } = require("../../utils/config")
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/featured`);
+                const res = await axios.get(Config.API_URL + `/api/blog/featured`);
                 setFeaturedBlog(res.data[0]);
             }
             catch (err) {

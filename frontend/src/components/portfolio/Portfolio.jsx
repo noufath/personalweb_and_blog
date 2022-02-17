@@ -33,8 +33,9 @@ export default function Portofolio() {
     useEffect(() => {
      
         const fetchListCates = async () => {
+            const { default: Config } = require("../../utils/config")
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/portofolio_category/`);
+                const res = await axios.get(Config.API_URL +"/api/blog/portofolio_category/");
                 setPfcates(res.data);
             }
             catch (err) {
@@ -72,8 +73,9 @@ export default function Portofolio() {
 
 
         const fetchData = async () => {
+            const { default: Config } = require("../../utils/config")
             try {
-                const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/blog/portofolios/`, { porto_cat_id }, config );
+                const res = await axios.post(Config.API_URL + `/api/blog/portofolios/`, { porto_cat_id }, config );
                 setData(res.data);
             }
             catch (err) {
